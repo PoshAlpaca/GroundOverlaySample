@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B7E5C15934A8CBE7D9E2B7BE /* libPods-GroundOverlaySample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C730A1538BB1ACC2CCB9560 /* libPods-GroundOverlaySample.a */; };
 		BB2E6E71288EBA5800A6E68C /* GroundOverlaySampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2E6E70288EBA5800A6E68C /* GroundOverlaySampleApp.swift */; };
-		BB2E6E73288EBA5800A6E68C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2E6E72288EBA5800A6E68C /* ContentView.swift */; };
 		BB2E6E75288EBA5900A6E68C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB2E6E74288EBA5900A6E68C /* Assets.xcassets */; };
 		BB2E6E78288EBA5900A6E68C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB2E6E77288EBA5900A6E68C /* Preview Assets.xcassets */; };
+		BB2E6E9B288EBBB500A6E68C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2E6E9A288EBBB500A6E68C /* MapViewController.swift */; };
+		BB2E6E9D288EBE4A00A6E68C /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2E6E9C288EBE4A00A6E68C /* Secrets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +33,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		644AB2317D2F5A8ED7DFFFD0 /* Pods-GroundOverlaySample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GroundOverlaySample.debug.xcconfig"; path = "Target Support Files/Pods-GroundOverlaySample/Pods-GroundOverlaySample.debug.xcconfig"; sourceTree = "<group>"; };
+		969E44AD6144193121043256 /* Pods-GroundOverlaySample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GroundOverlaySample.release.xcconfig"; path = "Target Support Files/Pods-GroundOverlaySample/Pods-GroundOverlaySample.release.xcconfig"; sourceTree = "<group>"; };
+		9C730A1538BB1ACC2CCB9560 /* libPods-GroundOverlaySample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GroundOverlaySample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2E6E6D288EBA5800A6E68C /* GroundOverlaySample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroundOverlaySample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2E6E70288EBA5800A6E68C /* GroundOverlaySampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroundOverlaySampleApp.swift; sourceTree = "<group>"; };
-		BB2E6E72288EBA5800A6E68C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BB2E6E74288EBA5900A6E68C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB2E6E77288EBA5900A6E68C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BB2E6E7D288EBA5900A6E68C /* GroundOverlaySampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GroundOverlaySampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2E6E87288EBA5900A6E68C /* GroundOverlaySampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GroundOverlaySampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB2E6E9A288EBBB500A6E68C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		BB2E6E9C288EBE4A00A6E68C /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7E5C15934A8CBE7D9E2B7BE /* libPods-GroundOverlaySample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,11 +72,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		973614B23E7A8FD1C0CD53BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				644AB2317D2F5A8ED7DFFFD0 /* Pods-GroundOverlaySample.debug.xcconfig */,
+				969E44AD6144193121043256 /* Pods-GroundOverlaySample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BB2E6E64288EBA5800A6E68C = {
 			isa = PBXGroup;
 			children = (
 				BB2E6E6F288EBA5800A6E68C /* GroundOverlaySample */,
 				BB2E6E6E288EBA5800A6E68C /* Products */,
+				973614B23E7A8FD1C0CD53BE /* Pods */,
+				E38B594A71A00AC7476387AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,7 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				BB2E6E70288EBA5800A6E68C /* GroundOverlaySampleApp.swift */,
-				BB2E6E72288EBA5800A6E68C /* ContentView.swift */,
+				BB2E6E9A288EBBB500A6E68C /* MapViewController.swift */,
+				BB2E6E9C288EBE4A00A6E68C /* Secrets.swift */,
 				BB2E6E74288EBA5900A6E68C /* Assets.xcassets */,
 				BB2E6E76288EBA5900A6E68C /* Preview Content */,
 			);
@@ -102,6 +121,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		E38B594A71A00AC7476387AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C730A1538BB1ACC2CCB9560 /* libPods-GroundOverlaySample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,9 +136,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB2E6E91288EBA5900A6E68C /* Build configuration list for PBXNativeTarget "GroundOverlaySample" */;
 			buildPhases = (
+				AC7631292A0ECDDC14AA74E0 /* [CP] Check Pods Manifest.lock */,
 				BB2E6E69288EBA5800A6E68C /* Sources */,
 				BB2E6E6A288EBA5800A6E68C /* Frameworks */,
 				BB2E6E6B288EBA5800A6E68C /* Resources */,
+				B901900E63BF0D26541CAB85 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,12 +256,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AC7631292A0ECDDC14AA74E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GroundOverlaySample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B901900E63BF0D26541CAB85 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GroundOverlaySample/Pods-GroundOverlaySample-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GroundOverlaySample/Pods-GroundOverlaySample-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GroundOverlaySample/Pods-GroundOverlaySample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BB2E6E69288EBA5800A6E68C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB2E6E73288EBA5800A6E68C /* ContentView.swift in Sources */,
+				BB2E6E9B288EBBB500A6E68C /* MapViewController.swift in Sources */,
+				BB2E6E9D288EBE4A00A6E68C /* Secrets.swift in Sources */,
 				BB2E6E71288EBA5800A6E68C /* GroundOverlaySampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,6 +455,7 @@
 		};
 		BB2E6E92288EBA5900A6E68C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 644AB2317D2F5A8ED7DFFFD0 /* Pods-GroundOverlaySample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -412,6 +485,7 @@
 		};
 		BB2E6E93288EBA5900A6E68C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 969E44AD6144193121043256 /* Pods-GroundOverlaySample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
