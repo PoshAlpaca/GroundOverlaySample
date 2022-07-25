@@ -11,7 +11,7 @@ let cornerB = GMSGeometryOffset(startPoint, 500, 135)
 
 final class MapViewController: UIViewController {
   private let mapView: GMSMapView
-  private let groundOverlay: GMSGroundOverlay
+  private var groundOverlay: GMSGroundOverlay
 
   private var renderedImageCount = 0
   private var subscriptions = Set<AnyCancellable>()
@@ -50,10 +50,19 @@ final class MapViewController: UIViewController {
       .autoconnect()
       .sink { [weak self] _ in
         guard let self = self else { return }
+
+        if self.renderedImageCount.isMultiple(of: 10) {
+          print("Wiping ground overlay")
+          self.mapView.clear()
+          self.groundOverlay = GMSGroundOverlay(bounds: .init(coordinate: cornerA, coordinate: cornerB), icon: nil)
+          self.groundOverlay.map = self.mapView
+        }
+
         let bounds = CGRect(origin: .zero, size: .init(width: .random(in: 1500...2000), height: .random(in: 1500...2000)))
         print("Rendering image no. \(self.renderedImageCount + 1) with a size of \(Int(bounds.width)) x \(Int(bounds.height))")
         self.groundOverlay.icon = Self.renderImage(in: bounds)
         self.renderedImageCount += 1
+
       }
       .store(in: &subscriptions)
   }
